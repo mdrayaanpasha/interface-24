@@ -1,0 +1,32 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/am-i-breached",
+            "dest": "/"
+        },
+        {
+            "src": "/email-exposed",
+            "dest": "/"
+        },
+
+        {
+            "src": "/password-strenght",
+            "dest": "/"
+        },
+
+        {
+            "src": "/check-breaches",
+            "dest": "/"
+        },
+
+        {
+            "src": "/breaches",
+            "dest": "/"
+        },
+
+    ]
+}
