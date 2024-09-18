@@ -20,10 +20,11 @@ function Nav(){
                 height:6vh;
                 font-weight:bold;
                 font-size:2vh;
-                border-radius:1vw;
+                border-radius:1.5vw;
                 border:none;
                 background:#181818;
                 color:white;
+                margin-right:4vw;
             }
                 .gradient {
                 
@@ -39,10 +40,10 @@ function Nav(){
         </style>
         <nav>
             <div className="section1">
-                <h2>PassProtect</h2>
+                <h1 style={{marginLeft:"2vw",cursor:"pointer"}} onClick={e=>window.location.href="./"}>PassProtect</h1>
             </div>
             <div className="section2">
-                <button>Try Now <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="xfungia x1qx5ct2 xw4jnvo"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
+                <button onClick={e=>window.location.href="./am-i-breached"}>Try Now <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="xfungia x1qx5ct2 xw4jnvo"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
             </div>
         </nav>
         </>

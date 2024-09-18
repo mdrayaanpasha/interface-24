@@ -10,12 +10,13 @@ function Home() {
         <>
             <style>
                 {`
-               h1{
+               .no-padding{
                margin:0 !important;
-                padding:0;
+                padding:0 !important;
                }
                 .gradient {
-                
+                margin:0 !important;
+                padding:0 !important;
 
                     background: linear-gradient(90deg, lightpink, lightblue, lightgreen, yellow); 
                     font-weight:normal;
@@ -23,7 +24,8 @@ function Home() {
                     -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
                     background-clip: text; /* Standard property for background clipping */
                     color: transparent; /* Fallback for browsers that do not support the text fill color property */
-                }
+                ma
+                    }
                 .hero{
                 height:100vh;
                 }
@@ -65,7 +67,7 @@ function Home() {
             button{
                     background-color:black;
                     color:white;
-                    padding:1vh;
+                    padding:2vh;
                     padding-right:2vw;
                     padding-left:2vw;
                     
@@ -76,7 +78,9 @@ function Home() {
                     font-size:2.5vh;
                     
                 }
-                   
+                svg{
+                font-size:2.5vh !important; 
+                }
 
                 .other{
                 margin-top:2.5vw;
@@ -139,24 +143,7 @@ function Home() {
               0 0 10px 5px rgba(144, 238, 144, 0.2), /* Light green shadow */
               0 0 10px 5px rgba(255, 255, 0, 0.2); /* Yellow shadow */
 }
-
-
-                .nav-e {
-                
-                display:flex;
-                align-items:center;
-                width:30vw;
-                justify-content:center;
-                margin-bottom:5vh;
-                gap:5vw !important;
-                font-size:1.8vh;
-                color:white;
-                }
-
-                .nav-e a{
-                color:white;
-                text-decoration:none;
-                }
+              
                 html {
   scroll-behavior: smooth;
 }
@@ -218,7 +205,7 @@ width:100%;
                 <section className="hero">
                     <div className="other">
                     <h1 className="gradient typewriter" >Secure Your Digital Footprint</h1>
-                    <h1>Protect your online identity.<br/>
+                    <h1 className="no-padding">Protect your online identity.<br/>
                     Identify breaches & Make Safe Passwords- all in one place.</h1>
                     
                     </div>
@@ -228,9 +215,9 @@ width:100%;
                         <div className="div">
     <h1>Check for Data Breaches</h1>
     <p>Scan your credentials or domain to see if they have been compromised in a data breach.</p>
-    <button onClick={e => window.location.href="./breach-check"}>
+    <button onClick={e => window.location.href="./am-i-breached"}>
         Scan Now
-        <svg viewBox="0 0 24 24" fill="currentColor" width="1.5em" height="1.5em" className="xfungia xxk0z11 xvy4d1p x1yfc4yt">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="2.5vw" height="2.5vh" className="xfungia xxk0z11 xvy4d1p x1yfc4yt">
             <g clip-path="url(#a)">
                 <path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path>
             </g>
@@ -252,15 +239,15 @@ width:100%;
                     <h2>Is your password strong?</h2>
                     <p>Check if your password is safe, or hackable with the magic of sha3_512</p>
                     <h5 className="gradient">Strong Password!</h5>
-                    <button onClick={e=>window.location.href="./how"}>Check out! <svg viewBox="0 0 24 24" fill="currentColor" width="1.5em" height="1.5em" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
+                    <button onClick={e=>window.location.href="./password-strenght"}>Check out! <svg viewBox="0 0 24 24" fill="currentColor" width="2.5vw" height="2.5vh" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
                 </div>
 
             <div className="container-card">
                 <img src={card3Img} alt="" />
-                <h2>Was your fav site breached.</h2>
+                <h2>is your domain safe?</h2>
                 <p>Enter Domains to get details of all breaches the domain has.</p>
                 <h5 className="gradient">Fav Breach</h5>
-                <button onClick={e=>window.location.href="https://forms.gle/uGspZKcNGpEbj48p6"}>Check out! <svg viewBox="0 0 24 24" fill="currentColor" width="1.5em" height="1.5em" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
+                <button onClick={e=>window.location.href="./check-breaches"}>Check out! <svg viewBox="0 0 24 24" fill="currentColor" width="2.5vw" height="2.5vh" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
             </div>
 
            
@@ -269,7 +256,7 @@ width:100%;
                 <h2>Check All Breaches!</h2>
                 <p>Check most common breaches that has ever happened!</p>
                 <h5 className="gradient">Breached?</h5>
-                <button onClick={e=>window.location.href="./about"}>Learn More! <svg viewBox="0 0 24 24" fill="currentColor" width="1.5em" height="1.5em" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
+                <button onClick={e=>window.location.href="./breaches"}>Learn More! <svg viewBox="0 0 24 24" fill="currentColor" width="2.7vw" height="2.7vh" class="xfungia xxk0z11 xvy4d1p x1yfc4yt"><g clip-path="url(#a)"><path d="m15.95 9.465-8.193 8.192a1 1 0 1 1-1.414-1.414l8.192-8.193H9.878a1 1 0 1 1 0-2h7.072a1 1 0 0 1 1 1v7.071a1 1 0 1 1-2 0V9.465z"></path></g><defs><clipPath><path d="M0 0H24V24H0z"></path></clipPath></defs></svg></button>
             </div>
 
             
